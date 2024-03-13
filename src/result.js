@@ -44,9 +44,7 @@ const Result= ()=> {
                 <input type='text' style={{outline: 'none', height: '25px', marginLeft: '46px'}} onChange={(e)=> setRct(e.target.value)}  placeholder='Celcius'/>
               </div>
 
-              <div className="mt-3" style={{marginLeft: '97px'}}>
-                <button type="button" class="btn btn-info pt-1 pb-1" style={{fontSize: '12px'}}>Caculate Vs</button>
-              </div>
+              
               <div className="mt-3" style={{marginLeft: '97px'}}>
                 <div>VS={vs}</div>
               </div>
@@ -56,9 +54,6 @@ const Result= ()=> {
                 <input type='text' style={{outline: 'none', height: '25px', marginLeft: '27px'}} onChange={(e)=> setMa(e.target.value)}  placeholder='Measured Current'/>
               </div>
 
-              <div className="mt-3" style={{marginLeft: '97px'}}>
-                <button type="button" class="btn btn-info pt-1 pb-1" style={{fontSize: '12px'}}>Caculate CE%</button>
-              </div>
 
               <div className="mt-3" style={{marginLeft: '97px'}}>
                 <div>C.E%={ce}</div>
