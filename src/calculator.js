@@ -20,23 +20,23 @@ const Calculator=()=>{
 
               <div>
                 <label style={{fontSize: '20px', marginTop: '20px'}} >Burden:</label>
-                <input type='text' style={{outline: 'none', height: '25px', marginLeft: '46px'}} onChange={(e)=> setBurden(e.target.value)}  placeholder='VA'/>
+                <input type='text' style={{outline: 'none', height: '25px', marginLeft: '46px', width: '50%'}} onChange={(e)=> setBurden(e.target.value)}  placeholder='VA'/>
               </div>
 
               <div>
                 <label style={{fontSize: '20px'}} >Sec-Current:</label>
-                <input type='text' className='ms-1' style={{outline: 'none', height: '25px'}} onChange={(e)=> setSec(e.target.value)}  placeholder='1/5A'/>
+                <input type='text' className='ms-1' style={{outline: 'none', height: '25px', width: '50%'}} onChange={(e)=> setSec(e.target.value)}  placeholder='1/5A'/>
               </div>
 
               <div>
                 <label style={{fontSize: '20px'}} >ALF:</label>
-                <input type='text' style={{outline: 'none', height: '25px', marginLeft: '75px'}} onChange={(e)=> setAlf(e.target.value)} />
+                <input type='text' style={{outline: 'none', height: '25px', marginLeft: '75px', width: '50%'}} onChange={(e)=> setAlf(e.target.value)} />
               </div>
 
               <div className='row justify-content-center mt-3'>
                 <div className='col-6 align-items-center'>
                 <Link to='result'>  
-                <button type="button" className="btn btn-info ps-5 pe-5 pt-1 pb-1" style={{width: '100%', fontSize: '12px'}}>Next</button>
+                <button type="button" className="btn btn-info ps-5 pe-5 pt-1 pb-1" style={{width: '100%', fontSize: '12pxnpms'}}>Next</button>
                 </Link>  
                 </div>
               
