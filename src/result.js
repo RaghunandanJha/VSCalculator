@@ -6,8 +6,8 @@ const Result= ()=> {
     const Context=useContext(context);
     const {burden, setBurden, sec, setSec, alf, setAlf, rct, setRct}=Context;
     
-    const [root, setRoot]=useState('');
-    const [rb, setRb]=useState('');
+    const [root, setRoot]=useState();
+    const [rb, setRb]=useState();
     const [xb, setXb]=useState();
     const [ma, setMa]=useState();
 
@@ -29,10 +29,7 @@ const Result= ()=> {
     const Root=Math.sqrt(((rctValue + xbValue) * (rctValue + xbValue)) + (rbValue * rbValue));
     const vs=alfValue*secValue*Root;
 
-    const ce=(maValue/(secValue*secValue*alfValue))*100;
-    
-
-
+    const ce=((maValue*100)/(secValue*secValue*alfValue));
     return (
         <div className="container-fluid">
       <div className='row justify-content-center mt-2'>
@@ -56,7 +53,7 @@ const Result= ()=> {
 
 
               <div className="mt-3" style={{marginLeft: '97px'}}>
-                <div>C.E%={ce}</div>
+                <div>C.E%={ce}: Current{maValue}, Alf: {alfValue}, sec: {secValue}</div>
               </div>
 
          </div>
