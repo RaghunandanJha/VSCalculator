@@ -29,7 +29,7 @@ const Result= ()=> {
     const Root=Math.sqrt(((rctValue + xbValue) * (rctValue + xbValue)) + (rbValue * rbValue));
     const vs=alfValue*secValue*Root;
 
-    const ce=((maValue*100)/(secValue*secValue*alfValue));
+    const ce=((maValue*100)/(secValue*alfValue));
     return (
         <div className="container-fluid">
       <div className='row justify-content-center mt-2'>
@@ -53,7 +53,7 @@ const Result= ()=> {
 
 
               <div className="mt-3" style={{marginLeft: '97px'}}>
-                <div>C.E%={ce}: Current{maValue}, Alf: {alfValue}, sec: {secValue}</div>
+                <div>C.E%={ce}</div>
               </div>
 
          </div>
